@@ -1,7 +1,7 @@
 # cplusplus
 My journey on learning c/c++ language!
 
-So far ive learned rougly 20% 
+So far ive learned rougly 35% 
 of these languages!
 
 if theres any pointers or tips you'd like to give
