@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using std::string;
 using std::cout;
 using std::cin;
 using std::endl;
+
 
 int main() {
 	// Single character string
@@ -53,6 +55,35 @@ int main() {
 	int hi[2] = { 0, 1 };
 	hi[0] = 56;
 	cout << hi[0];
+	
+	// hey been a minute!
+	// Vectors. better arrays :shrug:
+	// allowed to store any int value in this
+	// and use loops to get these values and or
+	// use to .at(index) method
+	// or like a typical array use brackets [index]
+	vector<int> intVector{9,6,3,88};
+	
+	// simple usage case for a vector
+	for (unsigned int i{0}; i < intVector.size(); i++)
+		cout << intVector.at(i) << endl; // again you can do intVector[i];
+	
+	// Lets jump into 2d vectors. these are pretty awesome
+	// allows you to have MULTIPLE arrays within the vector
+	// to store more data sexily 
+	vector<vector<int>> 2dVectorInt {
+		{993,7673,76357},
+		{9283,6363,832}
+	};
+	// here im just getting the first entry for both arrays and combining them on output
+	// for each entry
+	for (unsigned int j{0}; j < 2dVectorInt.at(0).size(); j++) {
+		unsigned int firstToAdd{2dVectorInt.at(j)};
+		unsigned int secondToAdd{2dVectorInt.at(j)};
+		cout << (firstToAdd + secondToAdd) << endl;
+	}
+	
+	
 
 	// or return 0;
 	// i like to pause it just from my
