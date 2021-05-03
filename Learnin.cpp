@@ -78,8 +78,8 @@ int main() {
 	// here im just getting the first entry for both arrays and combining them on output
 	// for each entry
 	for (unsigned int j{0}; j < 2dVectorInt.at(0).size(); j++) {
-		unsigned int firstToAdd{2dVectorInt.at(j)};
-		unsigned int secondToAdd{2dVectorInt.at(j)};
+		unsigned int firstToAdd{2dVectorInt.at(0).at(j)};
+		unsigned int secondToAdd{2dVectorInt.at(1).at(j)};
 		cout << (firstToAdd + secondToAdd) << endl;
 	}
 	
