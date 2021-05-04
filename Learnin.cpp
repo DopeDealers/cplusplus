@@ -77,6 +77,7 @@ int main() {
 	};
 	// here im just getting the first entry for both arrays and combining them on output
 	// for each entry
+	// could also use size_t for j or toAdd variables
 	for (unsigned int j{0}; j < 2dVectorInt.at(0).size(); j++) {
 		unsigned int firstToAdd{2dVectorInt.at(0).at(j)};
 		unsigned int secondToAdd{2dVectorInt.at(1).at(j)};
