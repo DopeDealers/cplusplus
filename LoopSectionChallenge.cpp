@@ -77,7 +77,7 @@ int main()
 				if (numberStorage.size() != 0) {
 					for (size_t val : numberStorage)
 						averageTemp += val;
-					cout << "The average number in the list is: " << (averageTemp % 5) << endl;
+					cout << "The average number in the list is: " << (averageTemp / numberStorage.size()) << endl;
 				}
 				else
 					cout << "Unable to calculate the average of the list";
